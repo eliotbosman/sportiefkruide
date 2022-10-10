@@ -1,0 +1,140 @@
+img {
+    width: auto; height: auto;
+    max-width: 50vw; max-height: 50vh;
+    animation: test 6s infinite ease-in-out;
+
+}
+
+body {
+    font-family: 'Arial Narrow';
+    letter-spacing: 1pt;
+    background: silver; 
+}
+
+h1, h2 {
+    font-weight: 100;
+}
+h1 {
+    font-size: 75pt;
+    line-height: 0;    
+}
+
+figure {
+}
+
+figcaption {
+    text-align: center;
+}
+
+.sk-1, .sk-2, .sk-3 {
+    margin-top: 5vh;
+}
+
+small, h2 {
+    background: greenyellow;
+}
+
+.sk-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr;
+    grid-gap: 10vw;
+    text-align: right;
+}
+
+.sk-2 {
+    display: grid;
+    grid-template-columns: 0.33fr 0.5fr 0.33fr;
+    grid-template-rows: 1fr;
+
+}
+
+.sk-3 {
+    margin: 1%;
+    display: grid;
+    grid-gap: 10vh 9vw;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 0.25fr;
+    text-align: justify-left;
+}
+
+.sk-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    text-align: center;
+}
+
+.sk-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50vh;
+    border-radius: 100%;
+    border: greenyellow 20px solid;
+    margin-bottom: 10vh;
+    margin: 5%;
+}
+
+.sk-5-img {
+    animation: test2 ease infinite 6s, test 6s infinite ease-in-out;
+    width: 100%; height: 100%;
+    border-radius: 100%;
+}
+
+.sk-6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 10vh;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.sk-6-i {
+    line-height: 65pt;
+    background: grey;
+    border: silver 9px ridge;
+    box-shadow: silver 0.2vh 0.2vw 2vh 0.2vw inset; 
+    animation: infinite alternate-reverse 1.2s ease-in-out test3;
+}
+
+a {
+    color: black; 
+}
+
+@keyframes test {
+    0% {
+        border: dashed 15px greenyellow;
+    }
+    25% {
+        border: dotted 15px greenyellow;
+    }
+    50% {
+        border: solid 15px  greenyellow;
+    }
+    75% {
+        border: ridge 15px greenyellow;
+    }
+    100% {
+        border: dashed greenyellow 15px;
+    }
+}
+
+@keyframes test2 {
+    0% {
+        transform: rotate(0deg);   }
+
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);   }
+}
+
+@keyframes test3 {
+    from {
+        background: grey;
+    }
+    to {
+        background: greenyellow;
+    }
+}
